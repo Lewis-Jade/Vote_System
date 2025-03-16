@@ -1,6 +1,5 @@
-Here's a concise README for your voting system:  
 
----
+
 
 # Voting System  
 
