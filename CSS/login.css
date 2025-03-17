@@ -17,14 +17,15 @@ section{
      background-image: url(../IMG/Ivoted.jpg);
      background-size: cover;
      background-blend-mode: multiply;
-     background-color: #ddda16d2;
+     background-color: #dd166952; 
      display: flex;
      justify-content: center;
      align-items: center;
+     transition: 0.5s ease-in-out;
 
 }
 .container{
-    height: 450px;
+    height: 520px;
      width: 400px;
      position: relative;
      perspective: 1000px;
@@ -32,23 +33,26 @@ section{
 .box{
     height: 100%;
     width: 100%;
-
+  
     transform-style: preserve-3d;
     transition: 0.5s ease-in-out;
    
 }
+
 .front,.back{
     position: absolute;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
+    transition: 0.5s ease-in-out;
 }
 
 .front{
-    background: #ffffffc4;
+    background: #ffffffce;
     border-radius: 8px;    
 
 }
+
 form{
     height: 100%;
     width: 100%;
@@ -62,7 +66,7 @@ form{
 .inputbox{
     position: relative;
     height: 44px;
-    width: 100%;
+    width: 80%;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -78,6 +82,7 @@ input{
     background: none;
     color: #000;
     cursor: pointer;
+    border-bottom: 1px solid #0000003d;
 
 }
 span{
@@ -89,13 +94,16 @@ span{
     transition: 0.5s ease-in-out;
 }
 .back{
-    background-color: red;
+    background: #ffffffce;
     transform: rotateY(180deg);
+    border-radius:8px ;
 }
 h2{
     color: rgba(8, 71, 243, 0.918);
 }
-
+input:focus{
+    border-bottom: none;
+}
 input:focus  ~ span{
     visibility: visible;
     transform: scalex(4.5);
@@ -121,7 +129,7 @@ p{
     left: 10px;
     color: rgba(8, 71, 243, 0.918);
     transition: 0.5s ease-in-out;
-    cursor: pointer;
+    cursor: pointerz;
 }
 button{
     position: absolute;
@@ -145,5 +153,23 @@ input[type="submit"]:hover{
     transform: translateY(-5px);
     background: #071ea5;
 }
+.rotate{
+    transform: rotateY(-180deg);
+}
 
+
+.sign-up  input{
+    margin-top: 10px;
+
+   
+}
+.sign-up input[type="submit"]{
+    background-color: rgb(236, 13, 31);
+    margin-top: 5px;
+    height: 30px;
+}
+
+.rotate section{
+    background-color: red;
+}
 
