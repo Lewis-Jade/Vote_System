@@ -14,15 +14,25 @@ body{
 section{
     width: 100%;
     height: 100%;
-     background-image: url(../IMG/Ivoted.jpg);
+     background-image: url(../IMG/ballot-box.jpg);
      background-size: cover;
      background-blend-mode: multiply;
-     background-color: #dd166952; 
+     background-color: #ff09091c; 
      display: flex;
      justify-content: center;
      align-items: center;
      transition: 0.5s ease-in-out;
 
+}
+h1{
+    text-transform: uppercase;
+    position: absolute;
+     top: 0;
+     left: 0;
+     padding: 10px;
+     color: rgba(108, 16, 145, 0.918);
+  text-shadow: 2px 2px 4px #ffffffd3;
+    font-size: 27px;
 }
 .container{
     height: 520px;
@@ -48,7 +58,7 @@ section{
 }
 
 .front{
-    background: #ffffffce;
+    background: #ffffff;
     border-radius: 8px;    
 
 }
@@ -56,7 +66,8 @@ section{
 form{
     height: 100%;
     width: 100%;
-    display: flex;
+    display: flex;  
+    padding: 5px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -94,9 +105,10 @@ span{
     transition: 0.5s ease-in-out;
 }
 .back{
-    background: #ffffffce;
+    background: #ffffff;
     transform: rotateY(180deg);
     border-radius:8px ;
+    padding: 5px;
 }
 h2{
     color: rgba(8, 71, 243, 0.918);
@@ -108,6 +120,11 @@ input:focus  ~ span{
     visibility: visible;
     transform: scalex(4.5);
     background: rgba(8, 71, 243, 0.918);
+}
+.back input:focus  ~ span{
+    visibility: visible;
+    transform: scalex(4.5);
+    background: rgb(255, 3, 66);
 }
 input[type="submit"]{
    width: 90%;

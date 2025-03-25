@@ -10,7 +10,7 @@ const section = document.getElementById('section')
 getButton.addEventListener("click",  function(){
    
     cardBox.classList.add('rotate');
-    section.style.backgroundColor = "rgba(233, 67, 17, 0.62)";
+    section.style.backgroundColor = "rgba(233, 67, 17, 0.36)";
 
 });
 

@@ -10,6 +10,7 @@
 <body>
 
 <section    id="section">
+    <h1>its now or never vote today</h1>
    <div class="container">
        <div class="box"  id="rotateCard">
        <div class="front">
