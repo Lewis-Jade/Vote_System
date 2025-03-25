@@ -92,6 +92,8 @@ header{
 i{
     font-size: 120px;
     color: #16151546;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 p{
     color: #fff;
@@ -146,4 +148,8 @@ span{
     font-size: 20px;
     color: red;
    padding-left: 20px;
+}
+i:hover{
+    color: #000;
+
 }
