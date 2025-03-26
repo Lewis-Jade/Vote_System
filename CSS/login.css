@@ -190,3 +190,23 @@ input[type="submit"]:hover{
     background-color: red;
 }
 
+.card {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.box.flipped {
+    transform: rotateY(180deg);
+}
+.error{
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    color: #ff0000;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    background: #fff;
+    padding:  0 10px 0 10px;
+    box-shadow: 2px 2px 6px #0000001c,
+               -2px -2px 6px #0000001c;
+}

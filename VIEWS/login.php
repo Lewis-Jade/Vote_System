@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +25,18 @@
        <div class="box"  id="rotateCard">
        <div class="front">
         <form action="">
+        <?php
+             
+             if(isset($_SESSION['message'] )){
 
+
+                echo '<p  class="error">'.$_SESSION['message']. '</p>';
+
+                unset($_SESSION['message'] );
+             }
+               
+             
+             ?>
         <h2>Login</h2>
             <div class="inputbox">
                 <input type="email" placeholder="email" required>
@@ -35,27 +56,40 @@
         </form>
        </div>
        <div class="back">
-       <form action=""  class="sign-up">
+       <form action="../INCLUDES/signup.inc.php"  class="sign-up" method="POST">
+             <?php
+             
+             if(isset($_SESSION['message'] )){
 
+
+                echo '<p  class="error">'.$_SESSION['message']. '</p>';
+
+                unset($_SESSION['message'] );
+             }
+               
+             
+             ?>
+        
+        
         <h2>Sign Up</h2>
             <div class="inputbox">
-                <input type="text" placeholder="firstname" required>
+                <input type="text"  name="firstname" placeholder="firstname" required>
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="text" placeholder="lastname" required>
+                <input type="text"  name="lastname" placeholder="lastname" required>
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="email" placeholder="email" required>
+                <input type="email" name="email" placeholder="email" required>
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="password" required>
+                <input type="password" name="password" placeholder="password" required>
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="confirm password" required>
+                <input type="password" name="confirm-password" placeholder="confirm password" required>
                 <span></span>
             </div>
             <div class="inputbox">
@@ -63,7 +97,7 @@
                 <button  id="btn-signup">Login</button>
             </div>
             
-            <input type="submit"  value="Sign Up">
+            <input type="submit"   name="submit" value="Sign Up">
     
 </form>
        </div>
@@ -72,5 +106,13 @@
 </section>
     
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        <?php if (isset($_SESSION['flip_signup'])): ?>
+            document.querySelector('.box').classList.add('flipped');
+            <?php unset($_SESSION['flip_signup']); ?>
+        <?php endif; ?>
+    });
+</script>
 
 </html>
