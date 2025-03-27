@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +16,26 @@
 <body>
 
 <header>
+    <?php
+    
+    if(isset(    $_SESSION['usernname'] )){
+
+
+        echo '<h3> Welcome '.    $_SESSION['usernname']. '</h3>';
+
+        unset(    $_SESSION['usernname'] );
+     }
+       
+    
+    ?>
+  
 <div class="status">
 <i class="fas fa-times-circle"></i> 
 <span>Voting status</span>
 
 
 </div>
-<form action="" class="logout">
+<form action="../INCLUDES/logout.inc.php" class="logout" method="POST">
     <button  type="submit">Logoout</button>
 </form>
 </header>

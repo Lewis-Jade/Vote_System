@@ -58,7 +58,7 @@ $stmt->bind_param('ssss',$firstname,$lastname,$email,$hash);
 $result=$stmt->store_result();
 
 if($stmt->execute()){
-  $_SESSION['message'] = "Sign up success! please login.";
+  $_SESSION['success'] = "Sign up success! please login.";
 
   header('Location: ../VIEWS/login.php');
   die();

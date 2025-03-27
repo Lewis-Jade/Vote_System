@@ -32,7 +32,7 @@ h1{
      padding: 10px;
      color: rgba(108, 16, 145, 0.918);
   text-shadow: 2px 2px 4px #ffffffd3;
-    font-size: 27px;
+    font-size: 20px;
 }
 .container{
     height: 520px;
@@ -43,9 +43,10 @@ h1{
 .box{
     height: 100%;
     width: 100%;
-  
+    
     transform-style: preserve-3d;
-    transition: 0.5s ease-in-out;
+    transition: transform 0.6s;
+
    
 }
 
@@ -146,7 +147,7 @@ p{
     left: 10px;
     color: rgba(8, 71, 243, 0.918);
     transition: 0.5s ease-in-out;
-    cursor: pointerz;
+    cursor: pointer;
 }
 button{
     position: absolute;
@@ -190,17 +191,14 @@ input[type="submit"]:hover{
     background-color: red;
 }
 
-.card {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
+
 .box.flipped {
     transform: rotateY(180deg);
 }
 .error{
     position: absolute;
     top: 3px;
-    left: 100px;
+    left: 50px;
     color: #ff0000;
     width: 60%;
     border-radius: 10px;
@@ -209,4 +207,17 @@ input[type="submit"]:hover{
     padding:  0 10px 0 10px;
     box-shadow: 2px 2px 6px #0000001c,
                -2px -2px 6px #0000001c;
+}
+.success{
+    color: #099109;
+    position: absolute;
+    left: 10px;
+   top: 10px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.mngs{
+    position: absolute;
+    left: 35%;
+    width: 380px;
 }

@@ -20,30 +20,45 @@ session_start();
 <body>
 
 <section    id="section">
-    <h1>its now or never vote today</h1>
-   <div class="container">
-       <div class="box"  id="rotateCard">
-       <div class="front">
-        <form action="">
-        <?php
+<?php
              
              if(isset($_SESSION['message'] )){
 
 
-                echo '<p  class="error">'.$_SESSION['message']. '</p>';
+                echo '<p  class="error  mngs ">'.$_SESSION['message']. '</p>';
 
                 unset($_SESSION['message'] );
              }
                
+
              
              ?>
+           
+    <h1>its now or never vote today</h1>
+   <div class="container">
+       <div class="box"  id="rotateCard">
+       <div class="front">
+        <form action="../INCLUDES/login.inc.php"  method="POST">
+        <?php
+             
+             if(isset( $_SESSION['success'] )){
+
+
+                echo '<p class="success">'. $_SESSION['success']. '</p>';
+
+                unset( $_SESSION['success'] );
+             }
+               
+             
+             ?>
+         
         <h2>Login</h2>
             <div class="inputbox">
-                <input type="email" placeholder="email" required>
+                <input type="email" placeholder="email"  name="email" required>
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="password" required>
+                <input type="password" placeholder="password"  name="password" required>
                 <span></span>
             </div>
             <div class="inputbox">
@@ -51,24 +66,14 @@ session_start();
                  <button  id="btn">Sign Up</button>
             </div>
             
-            <input type="submit"  value="Login">
+            <input type="submit"  name="submit" value="Login">
             
         </form>
        </div>
        <div class="back">
+        
        <form action="../INCLUDES/signup.inc.php"  class="sign-up" method="POST">
-             <?php
-             
-             if(isset($_SESSION['message'] )){
-
-
-                echo '<p  class="error">'.$_SESSION['message']. '</p>';
-
-                unset($_SESSION['message'] );
-             }
-               
-             
-             ?>
+          
         
         
         <h2>Sign Up</h2>
