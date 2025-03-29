@@ -127,6 +127,7 @@ input:focus  ~ span{
     transform: scalex(4.5);
     background: rgb(255, 3, 66);
 }
+
 input[type="submit"]{
    width: 90%;
    height: 44px;
@@ -148,6 +149,7 @@ p{
     color: rgba(8, 71, 243, 0.918);
     transition: 0.5s ease-in-out;
     cursor: pointer;
+
 }
 button{
     position: absolute;
@@ -198,7 +200,7 @@ input[type="submit"]:hover{
 .error{
     position: absolute;
     top: 3px;
-    left: 50px;
+    left: 10px;
     color: #ff0000;
     width: 60%;
     border-radius: 10px;
@@ -207,6 +209,7 @@ input[type="submit"]:hover{
     padding:  0 10px 0 10px;
     box-shadow: 2px 2px 6px #0000001c,
                -2px -2px 6px #0000001c;
+    z-index: 3;
 }
 .success{
     color: #099109;
@@ -220,4 +223,9 @@ input[type="submit"]:hover{
     position: absolute;
     left: 35%;
     width: 380px;
+}
+img{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
 }

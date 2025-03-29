@@ -9,6 +9,19 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $confirm_password = $_POST['confirm-password'];
 
+
+$passwordPattern = "/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
+
+  if(!preg_match($passwordPattern,$password)){
+    $_SESSION['message'] = "Password must be at least 8 characters long, include an uppercase letter, lowercase letter, a number, and a special character!";
+    $_SESSION['flip_signup'] = true;
+
+    header('Location: ../VIEWS/login.php');
+    die();
+
+
+  }
+
 if($password !== $confirm_password){
   $_SESSION['message'] = "passwords do not match!";
   $_SESSION['flip_signup'] = true;

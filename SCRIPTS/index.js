@@ -1,4 +1,7 @@
 
+
+
+
 const getButton = document.getElementById('btn');
 
 const   cardBox = document.getElementById('rotateCard');
@@ -22,3 +25,6 @@ signBtn.onclick = function(){
 
 
 }
+
+
+

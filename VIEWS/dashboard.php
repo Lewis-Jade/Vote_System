@@ -23,14 +23,14 @@ session_start();
 
         echo '<h3> Welcome '.    $_SESSION['usernname']. '</h3>';
 
-        unset(    $_SESSION['usernname'] );
+  
      }
        
     
     ?>
   
 <div class="status">
-<i class="fas fa-times-circle"></i> 
+<i class="fas fa-circle text-success"></i>
 <span>Voting status</span>
 
 

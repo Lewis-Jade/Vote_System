@@ -33,7 +33,7 @@ session_start();
 
              
              ?>
-           
+     
     <h1>its now or never vote today</h1>
    <div class="container">
        <div class="box"  id="rotateCard">
@@ -58,7 +58,8 @@ session_start();
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="password"  name="password" required>
+                <img  id="eye-login"  src="../IMG/visual.png">
+                <input type="password" placeholder="password"  name="password"  id="login-password" autocomplete="new-password"  required>
                 <span></span>
             </div>
             <div class="inputbox">
@@ -90,11 +91,13 @@ session_start();
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="password" name="password" placeholder="password" required>
+                <img  id="eye-icon"  src="../IMG/visual.png">
+                <input type="password" name="password" placeholder="password" id="current-password" autocomplete="new-password" autocomplete="new-password" required>
                 <span></span>
             </div>
             <div class="inputbox">
-                <input type="password" name="confirm-password" placeholder="confirm password" required>
+            <img  id="eye-two"  src="../IMG/visual.png">
+                <input type="password" name="confirm-password"  autocomplete="new-password" id="confirm-password"  placeholder="confirm password" required>
                 <span></span>
             </div>
             <div class="inputbox">
@@ -109,7 +112,7 @@ session_start();
        </div>
    </div>
 </section>
-    
+    <script src="../SCRIPTS/main.js"></script>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -118,6 +121,8 @@ session_start();
             <?php unset($_SESSION['flip_signup']); ?>
         <?php endif; ?>
     });
-</script>
 
+
+</script>
+ 
 </html>
