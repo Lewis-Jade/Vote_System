@@ -50,6 +50,11 @@ session_start();
              }
                
              
+             
+             
+          
+             
+             
              ?>
          
         <h2>Login</h2>
@@ -66,7 +71,7 @@ session_start();
                 <p>Don't have an Account?</p>   
                  <button  id="btn">Sign Up</button>
             </div>
-            
+             <a href="forgot_password.php">Forgot password?</a>
             <input type="submit"  name="submit" value="Login">
             
         </form>

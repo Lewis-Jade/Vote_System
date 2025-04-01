@@ -65,6 +65,7 @@ h1{
 }
 
 form{
+    position: relative;
     height: 100%;
     width: 100%;
     display: flex;  
@@ -228,4 +229,21 @@ img{
     position: absolute;
     right: 10px;
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: rgb(243, 8, 39);
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: auto;
+    bottom: 150px;
+    padding: 0 0 0 35px;
+    letter-spacing: 2px;
+}
+a:hover{
+    transform: translateY(-5px);
+    color: #f02b2bc9;
+
 }
