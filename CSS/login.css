@@ -232,7 +232,7 @@ img{
 }
 a{
     text-decoration: none;
-    color: rgb(243, 8, 39);
+    color: rgb(133, 129, 129);
     font-size: 16px;
     cursor: pointer;
     position: absolute;
@@ -240,7 +240,7 @@ a{
     top: auto;
     bottom: 150px;
     padding: 0 0 0 35px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 a:hover{
     transform: translateY(-5px);

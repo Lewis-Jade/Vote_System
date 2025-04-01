@@ -6,7 +6,7 @@ require_once('dbh.inc.php');
 
 $password = $_POST['password'];
 $confirm_password = $_POST['confirm-password'];
-$_SESSION['email'] = $email;
+$email = $_SESSION['email'] ;
 $hash;
 
 $passwordPattern = "/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
@@ -14,14 +14,14 @@ $passwordPattern = "/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%
 if(!preg_match($passwordPattern,$password)){
     $_SESSION['message'] = "Password must be at least 8 characters long, include an uppercase letter, lowercase letter, a number, and a special character!";
     header("Location: ../VIEWS/reset.php");
-    exit();
+    die();
 }
 
 
 if($password !== $confirm_password){
     $_SESSION['message'] = "passwords do not match ";
     header("Location: ../VIEWS/reset.php");
-    exit();
+    die();
 }
   
 $hash = password_hash($password,PASSWORD_DEFAULT);
@@ -34,7 +34,7 @@ $hash = password_hash($password,PASSWORD_DEFAULT);
 
     $_SESSION['success'] = "password reset successfully ";
     header("Location: ../VIEWS/login.php");
-    exit();
+    die();
   }else{
     $_SESSION['message'] ="Error updating password!";
     header("Location:  ../VIEWS/reset.php");
