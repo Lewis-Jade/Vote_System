@@ -11,8 +11,10 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    
-    background: #eef1f3;
+    background-image: url(../IMG/people-office-work-day.jpg);
+    background-size: cover;
+    background-color: #e9e8e8;
+    background-blend-mode: multiply;
 
 
 }
@@ -35,7 +37,7 @@ header{
     width: 80%;
    border-radius: 10px;
 
-    background: #fff;
+    background: #ffffffaf;
     box-shadow: 3px 3px  10px 6px  #00000017,
                   -3px -3px 10px 6px #00000017;
 }
@@ -59,7 +61,7 @@ header{
 
 }
 .ballot{
-    background: #088b08de;
+    background: #088b08ad;
 }
 .card{
     height: 70%;
@@ -75,13 +77,13 @@ header{
     border-bottom-left-radius: 10px;
 }
 .vote{
-    background: #eca813f1;
+    background: #eca713bd;
 }
 .result{
-    background: #d11111f1;
+    background: #d11111a2;
 }
 .setting{
-    background: #11b4d1f1;
+    background: #11b4d1b6;
 }
 .info:hover{
 

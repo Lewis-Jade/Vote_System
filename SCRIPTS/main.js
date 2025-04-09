@@ -14,13 +14,13 @@ eyeicon.onclick = function(){
     
     if(password.type === "password"){
        password.type = "text";
-      eyeicon.src = "../IMG/visual.png";
+      eyeicon.src = "../IMG/eye.png";
 
     }
     else
     {
         password.type = 'password';
-        eyeicon.src = "../IMG/hide.png";
+        eyeicon.src = "../IMG/eyebrow.png";
     }
 
 
@@ -32,13 +32,13 @@ eyeTwo.onclick = function(){
 
     if(cnfPassword.type === "password"){
         cnfPassword.type = "text";
-       eyeTwo.src = "../IMG/visual.png";
+       eyeTwo.src = "../IMG/eye.png";
  
      }
      else
      {
          cnfPassword.type = 'password';
-         eyeTwo.src = "../IMG/hide.png";
+         eyeTwo.src = "../IMG/eyebrow.png";
      }
 }
 
@@ -47,13 +47,13 @@ eyeLogin.onclick = function(){
 
     if(loginPassword.type === "password"){
         loginPassword.type = "text";
-       eyeLogin.src = "../IMG/visual.png";
+       eyeLogin.src = "../IMG/eye.png";
  
      }
      else
      {
          loginPassword.type = 'password';
-         eyeLogin.src = "../IMG/hide.png";
+         eyeLogin.src = "../IMG/eyebrow.png";
      }
 }
 

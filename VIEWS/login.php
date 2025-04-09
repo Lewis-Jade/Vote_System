@@ -16,6 +16,7 @@ session_start();
     <title>Login</title>
     <link rel="stylesheet" href="../CSS/login.css">
     <script src="../SCRIPTS/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -34,7 +35,7 @@ session_start();
              
              ?>
      
-    <h1>its now or never vote today</h1>
+    <h1>VoteExpress</h1>
    <div class="container">
        <div class="box"  id="rotateCard">
        <div class="front">
@@ -63,7 +64,7 @@ session_start();
                 <span></span>
             </div>
             <div class="inputbox">
-                <img  id="eye-login"  src="../IMG/visual.png">
+                <img  id="eye-login"  src="../IMG/eyebrow.png">
                 <input type="password" placeholder="password"  name="password"  id="login-password" autocomplete="new-password"  required>
                 <span></span>
             </div>
@@ -96,12 +97,12 @@ session_start();
                 <span></span>
             </div>
             <div class="inputbox">
-                <img  id="eye-icon"  src="../IMG/visual.png">
+                <img  id="eye-icon"  src="../IMG/eyebrow.png">
                 <input type="password" name="password" placeholder="password" id="current-password" autocomplete="new-password" autocomplete="new-password" required>
                 <span></span>
             </div>
             <div class="inputbox">
-            <img  id="eye-two"  src="../IMG/visual.png">
+            <img  id="eye-two"  src="../IMG/eyebrow.png">
                 <input type="password" name="confirm-password"  autocomplete="new-password" id="confirm-password"  placeholder="confirm password" required>
                 <span></span>
             </div>
@@ -115,6 +116,11 @@ session_start();
 </form>
        </div>
        </div>
+   </div>
+   <div class="expree">
+   <i class="fas fa-vote-yea"></i> <br>
+      Welcome to VoteExpress
+      Its now or never make a choice today
    </div>
 </section>
     <script src="../SCRIPTS/main.js"></script>

@@ -94,9 +94,11 @@ session_start();
             transform:translateY(-10px);
         }
         img{
-            position:absolute;
-            right:10px;
-            cursor:pointer;
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
         }
     </style>
 </head>
@@ -104,11 +106,11 @@ session_start();
     <form action="../INCLUDES/reset.inc.php" method="POST">
     <h1>Reset password</h1>
      <div class="box">
-     <img  id="eye-icon"  src="../IMG/visual.png">
+     <img  id="eye-icon"  src="../IMG/eyebrow.png">
      <input type="password" name="password" placeholder="password" id="current-password" autocomplete="new-password" autocomplete="new-password" required>
      </div>
      <div class="box">
-     <img  id="eye-two"  src="../IMG/visual.png">
+     <img  id="eye-two"  src="../IMG/eyebrow.png">
      <input type="password" name="confirm-password"  autocomplete="new-password" id="confirm-password"  placeholder="confirm password" required>
      </div>
     <input type="submit"  name="submit"  value="reset password">
