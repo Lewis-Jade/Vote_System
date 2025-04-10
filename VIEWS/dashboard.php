@@ -86,12 +86,16 @@ session_start();
         <div class="info  setting">
                 <div class="card">
                     <p>Profile and settings</p>
-                <i class="fas fa-cog"></i> 
+                    <a href="profile_settings.php">
+                    <i class="fas fa-cog"></i> 
+                    </a>
 
         </div>
         <div class="description">
         More
+        <a href="profile_settings.php">
         <i class="fa-solid fa-arrow-right"></i>
+        </a>
         </div>
         </div>
         </div>
