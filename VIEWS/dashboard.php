@@ -44,11 +44,18 @@ session_start();
             <div class="info  ballot">
                 <div class="card">
                     <p>Availabe elections</p>
+                    <a href="elections.php">
                 <i class="fas fa-vote-yea"></i>
+                  </a>
 
                 </div>
                 <div class="description">
+                    More
+                    <a href="elections.php">
 
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+            
                 </div>
             </div>
             <div class="info vote">
@@ -58,7 +65,8 @@ session_start();
                      
                 </div>
                 <div class="description">
-
+                More
+                <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -71,7 +79,8 @@ session_start();
 
             </div>
             <div class="description">
-
+            More
+            <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>
         <div class="info  setting">
@@ -81,7 +90,8 @@ session_start();
 
         </div>
         <div class="description">
-
+        More
+        <i class="fa-solid fa-arrow-right"></i>
         </div>
         </div>
         </div>

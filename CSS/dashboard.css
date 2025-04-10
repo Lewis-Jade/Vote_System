@@ -11,9 +11,9 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    background-image: url(../IMG/people-office-work-day.jpg);
+    background-image: url(../IMG/fatih.jpg);
     background-size: cover;
-    background-color: #e9e8e8;
+    background-color: #db7b0e7c;
     background-blend-mode: multiply;
 
 
@@ -75,6 +75,14 @@ header{
     height: 30%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #0000001a;
+    font-weight: 500 ;
 }
 .vote{
     background: #eca713bd;
@@ -162,4 +170,23 @@ h3{
     top: 10px;
     font-weight: 400;
     color: #069c06;
+}
+.fa-arrow-right{
+    color: #000;
+    font-size:20px;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    box-shadow: 3px 3px   6px  #00000017,
+    -3px -3px 6px #00000017;
+    transition: 0.5s ease-in-out;
+}
+.fa-arrow-right:hover{
+      transform: translateY(-10px);
 }
