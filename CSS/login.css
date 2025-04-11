@@ -283,3 +283,9 @@ i{
     top: 10px;
     font-size: 70px;
 }
+.fa-envelope{
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    right: 20px;
+}

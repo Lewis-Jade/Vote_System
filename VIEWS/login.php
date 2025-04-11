@@ -61,6 +61,7 @@ session_start();
         <h2>Login</h2>
             <div class="inputbox">
                 <input type="email" placeholder="email"  name="email" required>
+                <i class="fa-solid fa-envelope"></i>
                 <span></span>
             </div>
             <div class="inputbox">
@@ -94,7 +95,7 @@ session_start();
             </div>
             <div class="inputbox">
                 <input type="email" name="email" placeholder="email" required>
-                <span></span>
+                <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="inputbox">
                 <img  id="eye-icon"  src="../IMG/eyebrow.png">

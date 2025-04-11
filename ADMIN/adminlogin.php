@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +21,10 @@
           <h1>VoteExpress</h1>
         
         </div>
-        <form action="">
+        <form action="../INCLUDES/adminlogin.inc.php"  method="POST">
     <h2>Login</h2>
             <div class="inputbox">
+            <i class="fa-solid fa-envelope"></i>
                 <input type="email" placeholder="email"  name="email" required>
                 <span></span>
             </div>
@@ -28,10 +36,47 @@
            
           
             <input type="submit"  name="submit" value="Login">
+                <?php
+                
+                 if(isset($_SESSION['message'])){
+                      echo '<p class="error">'.$_SESSION['message'] .'</p>';
+                      unset($_SESSION['message'] );
+                    
+                 }
+                
+                ?>
+
+
+
+
+
 
         </form>
     </section>
 </body>
+<script>
+
+    
+let loginPassword = document.getElementById('login-password');
+let eyeLogin = document.getElementById('eye-login');
+
+eyeLogin.onclick = function(){
+
+
+if(loginPassword.type === "password"){
+    loginPassword.type = "text";
+   eyeLogin.src = "../IMG/eye.png";
+
+ }
+ else
+ {
+     loginPassword.type = 'password';
+     eyeLogin.src = "../IMG/eyebrow.png";
+ }
+}
+
+
+</script>
 </html>
 
 
