@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+}
+section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(../IMG/person.jpg);
+    background-size:cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 40px;
+}
+form{
+    height: 400px;
+    width: 380px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 6px #00000017,
+                  -3px -3px  6px #00000017;
+}
+.inputbox{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    height: 100%;
+    width: 80%;
+    padding: 0 0 0 30px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    border-bottom: 2px solid #000;
+    transition: 0.5s ease-in-out;
+     background: none;
+}
+input:focus{
+    border: none;
+}
+
+input[type="submit"]{
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    background: #0a2ecc;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 500;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: 0.5s ease-in-out;
+    box-shadow: 3px 3px 6px #00000017,
+    -3px -3px  6px #00000017;
+}
+span{
+    position: absolute;
+    height: 2px;
+    width: 1%;
+    background: #0a2ecc;
+    bottom: 0;
+    visibility: hidden;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    
+
+}
+h2{
+    color: #0a2ecc;
+}
+
+input:valid ~ span,
+input:focus ~ span{
+
+    visibility: visible;
+    transform: scaleX(90);
+}
+input[type="submit"]:hover{
+   transform: translateY(-10px);
+   background: #0423ad;
+
+}
+.info{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background:#e7890ee1;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #000;
+}
+i{
+    color: #fff;
+    font-size:50px ;
+    text-shadow: 2px 2px 5px #000;
+}
+.error{
+    margin-top: 10px;
+
+    color: #ff0000;
+    font-weight: 500;
+    
+}
+.info:hover  ~ form{
+    background-color: #fffafacc;
+    transition: 0.5s ease-in-out;
+}
