@@ -36,7 +36,7 @@ session_start();
 
 </div>
 <form action="../INCLUDES/logout.inc.php" class="logout" method="POST">
-    <button  type="submit">Logoout</button>
+    <button  type="submit"><i class="fa-solid fa-right-from-bracket"></i> Logoout</button>
 </form>
 </header>
     <div class="container">

@@ -136,6 +136,7 @@ button{
 }
 button:hover{
     transform: scale(1.2);
+    background: rgb(241, 3, 3);
 }
 
 .status{
@@ -170,6 +171,12 @@ h3{
     top: 10px;
     font-weight: 400;
     color: #069c06;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 3px 3px   6px  #00000036,
+    -3px -3px 6px #00000036;
 }
 .fa-arrow-right{
     color: #000;
@@ -189,4 +196,11 @@ h3{
 }
 .fa-arrow-right:hover{
       transform: translateY(-10px);
+}
+.fa-right-from-bracket{
+    font-size: 20px;
+    color: #fff;
+}
+.fa-right-from-bracket:hover{
+color: red;
 }

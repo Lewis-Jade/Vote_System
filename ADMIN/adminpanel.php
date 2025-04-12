@@ -13,7 +13,7 @@
         <?php
         session_start();
           if(isset( $_SESSION['username'] )){
-            echo '<p>'. $_SESSION['username'] .'</p>';
+            echo '<p> Welcome  '. $_SESSION['username'] .'</p>';
           }
         
         
