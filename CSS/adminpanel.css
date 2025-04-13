@@ -68,3 +68,48 @@ button:hover{
   transform: translateY(-10px);
 
 }
+.links{
+     position: relative;
+    height: 70px;
+    width: 800px;
+    left: 300px;
+    background: rgba(241, 241, 241, 0.13);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    background:#12058ad5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px #00000017,
+    -3px -3px  6px #00000017;
+
+}
+i{
+    padding-right: 10px;
+    box-shadow: 3px 3px   4px  #00000017,
+    -3px -3px 4px #00000017;
+ 
+}
+.candidates{
+    background: #06a006e5;
+}
+.elections{
+    background: #eca713e3;
+}
+.voters{
+    background: #db0b0be3;
+}
+.result{
+    background: #11b4d1e8;
+}

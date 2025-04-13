@@ -20,11 +20,20 @@
         ?>   
         
         </div>
+     
         <form action="../INCLUDES/adminlogout.inc.php" method="POST">
             <button  type="submit"><i class="fa-solid fa-right-from-bracket"></i></button>
         </form>
     </header>
-
+    <div class="links">
+          <a href=""  class="candidates"><i class="fas fa-users"></i> <i class="fas fa-ballot-check"></i> 
+          Total voters</a>
+          <a href=""class="elections"> <i class="fas fa-vote-yea"></i> Elections</a>
+          <a href=""  class="voters"><i class="fas fa-user-tie"></i> Candidates</a>
+          <a href="" class="result"><i class="fas fa-chart-bar"></i>
+          Results</a>
+          </div>
+        
     
 </body>
 </html>
