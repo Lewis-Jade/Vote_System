@@ -20,19 +20,57 @@
         ?>   
         
         </div>
+        <div class="links">
+          <a href="#voters"  class="candidates"><i class="fas fa-users"></i> <i class="fas fa-ballot-check"></i> 
+          Total voters</a>
+          <a href="#one"class="elections"> <i class="fas fa-vote-yea"></i> Elections</a>
+          <a href="#candidates"  class="voters"><i class="fas fa-user-tie"></i> Candidates</a>
+          <a href="" class="result"><i class="fas fa-chart-bar"></i>
+          Results</a>
+          </div>
      
         <form action="../INCLUDES/adminlogout.inc.php" method="POST">
             <button  type="submit"><i class="fa-solid fa-right-from-bracket"></i></button>
         </form>
     </header>
-    <div class="links">
-          <a href=""  class="candidates"><i class="fas fa-users"></i> <i class="fas fa-ballot-check"></i> 
-          Total voters</a>
-          <a href=""class="elections"> <i class="fas fa-vote-yea"></i> Elections</a>
-          <a href=""  class="voters"><i class="fas fa-user-tie"></i> Candidates</a>
-          <a href="" class="result"><i class="fas fa-chart-bar"></i>
-          Results</a>
+    
+    <div class="container">
+      <section  id="voters">
+      <div class="total-voters">
+          <div class="display-card">
+          <i class="fas fa-user-friends"></i>
+
           </div>
+      </div>
+      </section>
+      <section  class="one" id="one">
+          <form class="create-election" action="">
+            <h2>Create Election</h2>
+             <input type="text" placeholder="Election Title" required>
+             <textarea name="" id="" placeholder="Description..."></textarea>
+             <input type="datetime-local" placeholder="start date" required>
+             <input type="datetime-local" placeholder="start date" required>
+            <select name="" id="">
+              <option >Eligible voters</option>
+              <?php
+              
+                 $voters = ['Students','Teachers','Parents'];
+
+                 foreach($voters as $voter){
+
+                  echo '<option>' .$voter.'</option>';
+                 }
+              
+              ?>
+            </select>
+
+            <input type="submit" value="Create">
+
+          </form>
+      </section>
+      <section  class="two"id="candidates"></section>
+      <section  class="three"></section>
+    </div>
         
     
 </body>
