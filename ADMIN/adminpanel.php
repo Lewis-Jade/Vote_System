@@ -50,6 +50,7 @@
              <textarea name="" id="" placeholder="Description..."></textarea>
              <input type="datetime-local" placeholder="start date" required>
              <input type="datetime-local" placeholder="start date" required>
+             <input type="text" placeholder="position" required>
             <select name="" id="">
               <option >Eligible voters</option>
               <?php
@@ -68,7 +69,51 @@
 
           </form>
       </section>
-      <section  class="two"id="candidates"></section>
+        
+      <!-- input candidate -->
+
+      <section  class="two"id="candidates">
+           <div class="candidate-section">
+               <form action=""    class="cdn-form">
+               <h2  id="cdn">Add candidate</h2>
+                     <div class="inputBox">
+                        <input type="text"  placeholder="Firstname" required>
+                        <input type="text"  placeholder="Lastname" required>
+                        <input type="text"  placeholder="postion" required>
+                        <input type="text" name="party"  placeholder="party" required>
+
+                     </div>
+
+                     <div class="inputBox">
+                     <input type="file" name="profile_picture" accept="image/*">
+
+                     <textarea name="" id="" placeholder="Manifesto..."></textarea>
+                     <select name="status">
+                        <option value="active">Status</option>
+                      
+                        <?php
+                           
+                           $status = ["Active","Inactive","Disqualified"];
+
+                           foreach($status as $state){
+                                echo '<option>'.$state.'</option>';
+
+
+                           }
+                            
+                        
+                        ?>
+
+
+                      </select>
+
+                     </div>
+                     
+            <input id="cdn-btn" type="submit" value="Add Candidate">
+               </form>
+           </div>
+          
+      </section>
       <section  class="three"></section>
     </div>
         

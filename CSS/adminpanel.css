@@ -130,10 +130,10 @@ i{
   
 }
 section{
-position: relative;
+    position: relative;
     height: 100%;
     width: 100%;
-    background: #fff;
+    background:#fff;
     box-shadow: 2px 2px 5px #00000027,
                  -2px -2px 5px  #00000027;
     scroll-snap-align:start ;
@@ -149,7 +149,7 @@ position: relative;
 
 }
 .three{
-    background: #fff;
+    background:#fff;
     
 }
 .total-voters{
@@ -186,16 +186,19 @@ position: relative;
     font-size: 80px;
 }
 .create-election{
-    height: 420px;
-    width: 400px;
+    height: 500px;
+    width: 70%;
     background: rgb(247, 190, 6);
     left: 10px;
     position: relative;
     display: flex;
+    padding: 10px;
      align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
+    box-shadow: 2px 2px 5px #00000011,
+    -2px -2px 5px  #00000011;
 }
 input{
     width: 90%;
@@ -203,6 +206,7 @@ input{
     border-radius: 8px;
     outline: none;
     border: none;
+    margin-top: 20px;
     padding-left: 30px;
     box-shadow: 2px 2px 5px #00000027,
                  -2px -2px 5px  #00000027;
@@ -217,6 +221,10 @@ textarea,select{
     box-shadow: 2px 2px 5px #00000027,
                  -2px -2px 5px  #00000027;
 }
+textarea{
+    resize: none;
+    height: 80px;
+}
 input[type="datetime-local"]{
     margin-top: 20px;
 }
@@ -230,7 +238,49 @@ input[type="submit"]{
   font-weight: 700;
   background: #0a43dd; 
     color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 h2{
     color: #fff;
+}
+
+
+input[type="submit"]:hover{
+    transform: translateY(-10px);
+    background: #0a43dd;
+}
+.candidate-section{
+    position: relative;
+        height: 70%;
+        width: 80%;
+
+        justify-content: center;
+        align-items: center;
+        display: flex;
+}
+.cdn-form{
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+input[type="file"]{
+
+    background: #fff;
+    height: 30px;
+    align-content: center;
+}
+#cdn{
+    position: absolute;
+    top: 10px;
+}
+#cdn-btn{
+    position: absolute;
+    bottom: 10px;
+    background: #225dff;
 }

@@ -10,3 +10,26 @@ body{
     justify-content: center;
     display: flex;
 }
+
+a{
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 5px #00000027,
+    -2px -2px 5px  #00000027;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #f00;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover{
+    transform: translateY(-10px);
+}
